@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+.App {
+  text-align: center;
+}
+ul {
+  padding: 0px;
+}
+li {
+  list-style-type: none;
+}
+.css-2zunby-MuiSvgIcon-root{
+  margin: 0px !important;
+}
+
+p.mainheading{
+  font-size:35px;
+  font-weight:bold;
+  text-align:center;
+  padding:10px;
+  height:50px;
+  margin: 0px;
+}
+.mainheadingurdu{
+  font-size:35px;
+  font-weight:bold;
+  text-align:center;
+  padding:10px;
+  height:50px;
+  margin: 0px;
+}
+
+.headingLogo {
+  font-size: 38px;
+  margin: 0 auto;
+  padding: 11px 0px;
+}
+.subLogo{
+  padding: 15px 5px;
+  font-size: 15px;
+  margin: 0 auto;
+  padding: 18px 3px;
+}
+.subHeading{
+  font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin: 16px auto;
+}
+
+.LoginFormContainer form {
+  width: 33%;
+  position: absolute;
+  top: 90px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 27px 63px;
+  border-radius: 8px;
+  animation-name: loginAnimation;
+  animation-duration: .5s;
+}
+.LoginFormContainer {
+  background: #323232a0;
+    position: fixed;
+    left: 0px;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+input.form-control {
+  width: 67%;
+    height: 34px;
+    padding: 2px 9px;
+    margin: 0px 0px;
+    font-size: 14px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    outline: none;
+}
+.loginicon_Container{
+  text-align: center;
+  position: absolute;
+  left: 43%;
+  top: -47px;
+}
+.loginicon_Container img {
+  width: 80px;
+  height: 80px;
+  
+}
+input.form-control:focus {
+  border: 0px solid #000;
+}
+.form-group p {
+  font-weight: 500;
+    width: 24%;
+    margin: 12px auto;
+    font-size: 15px;
+}
+
+input.btn {
+  background: #72B347;
+    font-weight: 100 !important;
+    font-size: 16px;
+    margin: 8px 0px;
+    padding: 11px 80px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+
+}
+input.btn:hover {
+  background: #72b34782;
+}
+.logoutBtn{
+  background: mediumseagreen;
+  font-size: 16px;
+  margin: 10px 0px ;
+  padding: 10px 62px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+.logoutBtn:hover {
+  background: rgba(69, 186, 122, 0.792);
+}
+
+.successContainer{
+  background: white;
+  width: 480px;
+  height: 250px;
+  position: absolute;
+  top: 150px;
+  left: 30%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  animation: successAnimation ; 
+}
+.successImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  top: -50px;
+  transition: ease-in;
+  width: 11%;
+  height: 11%;
+  border-radius: 100%;
+  position: absolute;
+  top: -22px;
+  transition: cubic-bezier(1, -0.06, 0, 0.9);
+}
+.successImage img {
+  width: 40px;
+  height: 40px;
+  scale: 7;
+  object-fit: cover;
+  clip-path: circle(18% at 51% 49%);
+}
+.successContainer h1 {
+  margin: 15px auto;
+  color: #72b347;;
+}
+.successContainer p {
+    font-size: 17px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.registerFormContainer_inner  {
+  min-width: 33%;
+  position: absolute;
+  top: 90px;
+  margin: 0px auto;
+  background-color: white;
+  padding: 27px 63px;
+  border-radius: 8px;
+  animation-name: loginAnimation;
+  animation-duration: .5s;
+}
+.registerFormContainer {
+    background: #323232a0;
+    position: fixed;
+    left: 0px;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+ul.profile_info {
+ width: 45%;
+}
+.profile_info li {
+ 
+  background: antiquewhite;
+  margin: 5px auto;
+  padding: 5px 10px;
+}
+
+
+
+@keyframes loginAnimation {
+  from {scale:0;}
+  to {scale:1;}
+}
+
+
+
+
+
+@media (max-width : 800px ) {
+   
+  .heading{
+    font-size: 20px;
+  }
+  .subHeading{
+    font-size: 20px;
+  }
+  .dis_flex{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .flx_Cent{justify-content: center;}
+  .ptxt{font-size: 20px;}
+  .p0{padding: 0px auto;}
+  .py10{padding: 10px auto;}
+  .px10{padding:auto 10px; }
+  .m0{margin: 0px auto;}
+  .my10{margin: 10px auto;}
+  .mx10{margin:auto 10px; }
+
+  .LoginFormContainer form {
+    width: 60%;}
+}
+
+
+@media (max-width: 484px)  {
+  
+  .mainheading{
+      font-size: 25px !important;
+      font-weight: bold;
+      margin: 20px auto;
+  }
+  .headingLogo {
+    font-size: 30px !important;
+    padding: 22px 0px;
+  }
+  .subLogo{
+    padding: 12px 5px;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 25px 0px;
+  }
+  .subHeading{
+    font-size: 15px;
+  }
+  .mainheadingurdu{
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+    padding:10px;
+    height:50px;
+    margin: 0px;
+  }
+  .LoginFormContainer form {
+    width: 86%;
+    padding: 15px;
+}
+.logoutContainer {
+  width: 76%;
+  padding: 10px;
+}
+.form-group p{
+  display: none;
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+input.form-control {
+  width: 90%;
+  margin: 7px 0px;
+}
+.loginicon_Container {
+  left: 40%;
+  top: -52px;
+}
+} 
+
+
+@media (max-width: 380px){
+.loginicon_Container {
+    left: 38%;
+    top: -52px;
+}
+
+}
